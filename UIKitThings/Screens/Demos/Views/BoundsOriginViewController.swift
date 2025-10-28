@@ -11,7 +11,7 @@ final class BoundsOriginViewController: DemoContainerViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = ""
+		title = .empty
 		testBoundsOrigin()
 	}
 	

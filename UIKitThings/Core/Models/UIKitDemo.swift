@@ -47,6 +47,12 @@ extension UIKitDemo {
 				description: "How does changing bounds.origin affect subviews?",
 				viewController: BoundsOriginViewController(),
 				category: .views
+			 ),
+			 UIKitDemo(
+				title: "Frame vs Auto Layout",
+				description: "What will happen if we manually change the frame of a view that already works with Auto Layout?",
+				viewController: FrameAndAutoLayoutViewController(),
+				category: .views
 			 )
 		]
 	}

@@ -45,7 +45,8 @@ class DemoContainerViewController: UIViewController {
 		_ view: UIView,
 		withBorder: Bool = true,
 		showInfo: Bool = true,
-		infoText: String? = nil
+		infoText: String? = nil,
+		position: InfoLabelPosition = .automatic
 	) {
 		contentView.addSubview(view)
 		
@@ -54,13 +55,30 @@ class DemoContainerViewController: UIViewController {
 		}
 		
 		if showInfo {
-			addInfoLabel(for: view, text: infoText)
+			addInfoLabel(for: view, text: infoText, position: position)
 		}
 	}
 
 	func highlightView(_ view: UIView, color: UIColor = .systemPink) {
 		view.layer.borderWidth = 2
 		view.layer.borderColor = color.cgColor
+	}
+
+	func addCustomizableHighlightedView(
+		frame: CGRect,
+		borderColor: UIColor = .systemGreen,
+		borderWidth: CGFloat = 4,
+		cornerRadius: CGFloat = 16,
+		infoText: String = .empty,
+	) {
+		let highlightedView = HighlightedView(
+			frame: frame,
+			borderColor: borderColor,
+			borderWidth: borderWidth,
+			cornerRadius: cornerRadius,
+			infoText: infoText
+		)
+		contentView.addSubview(highlightedView)
 	}
 
 	@discardableResult
