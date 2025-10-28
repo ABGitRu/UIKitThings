@@ -52,7 +52,13 @@ extension UIKitDemo {
 				title: "Frame vs Auto Layout",
 				description: "What will happen if we manually change the frame of a view that already works with Auto Layout?",
 				viewController: FrameAndAutoLayoutViewController(),
-				category: .views
+				category: .layout
+			 ),
+			 UIKitDemo(
+				title: "Button with a hole",
+				description: "How to make button that contains hole that is not interactable?",
+				viewController: CircleHoleButtonController(),
+				category: .interactions
 			 )
 		]
 	}
