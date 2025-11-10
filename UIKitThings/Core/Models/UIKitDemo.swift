@@ -59,6 +59,12 @@ extension UIKitDemo {
 				description: "How to make button that contains hole that is not interactable?",
 				viewController: CircleHoleButtonController(),
 				category: .interactions
+			 ),
+			 UIKitDemo(
+				title: "Expanding Textfield",
+				description: "How to Create an Expanding Text Field in UIKit",
+				viewController: ExpandingTextFieldViewController(),
+				category: .interactions
 			 )
 		]
 	}
