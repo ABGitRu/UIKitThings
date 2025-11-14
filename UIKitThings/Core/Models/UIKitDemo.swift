@@ -65,6 +65,12 @@ extension UIKitDemo {
 				description: "How to Create an Expanding Text Field in UIKit",
 				viewController: ExpandingTextFieldViewController(),
 				category: .interactions
+			 ),
+			 UIKitDemo(
+				title: "Overlapping Shadow",
+				description: "How to Create an overlapping shadow",
+				viewController: OverlappingShadowViewController(),
+				category: .advanced
 			 )
 		]
 	}
